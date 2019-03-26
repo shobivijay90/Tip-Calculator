@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </header>
+  
+  <div class="flex">
+    
+    <div id="bill-info">
+      <p id="heading"><strong>Enter Bill Info Below!</strong></p>
+      
+      <form>
+        
+        <div class="form">
+          <label class="labels"><strong>Bill Total($):</strong></label>
+        <input type="number" class="inputs" id="bill_total"></input>
+        </div>
+      
+      <div class="form">
+        <label class="labels"><strong>Person(s):</strong></label>
+      <input type="number" class="inputs" id="persons"></input>
+      </div>
+                                                     
+    <div class="form">
+      <label class="labels"><strong>Tip:%</strong></label>
+   <input type="number" class="inputs" id="tip"></input>
+    </div>
+  
+      </form>
+    </div>
+
+    <div id="total-amt">
+      <form>
+        <div class="form2">
+          <label class="labels"><strong>Tip Amount:</strong></label><span id="tipamount" type="number"></span>
+        </div>
+      <div class="form2">
+        <label class="labels"><strong>Total with Tip:</strong></label><span id="totalwithtip" type="number"></span>
+      </div>
+    <div class="form2">
+      <label class="labels"><strong>Each Person Pays:</strong></label><span id="eachpersonpays" type="number"></span>
+    </div>
+      </form>
+    </div>
+
+    <div id="calculate">
+      <div>
+        <button type="submit" class="submit" onclick="calculate()"><strong>Calculate</strong></button>
+      </div>
+      <div>
+        <button type="submit" class="submit" onclick="reset()"><strong>Reset</strong></button>
+      </div>
+    </div>
+
+  </div>
+</html>
